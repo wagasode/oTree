@@ -1,0 +1,17 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Title{{ endblock }}
+
+{{ block content }}
+
+<p>
+    これから、あなたに5問のクイズが出題されます。<br>
+    そして、あなたと同じクイズを出題されているパートナーが居ます。<br>
+    あなたとパートナーがクイズに正解するか、誤答するかによって、獲得できる点数は変化します。<br>
+    具体的には、以下の得点表を参照してください。<br>
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

@@ -1,0 +1,17 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Contribute{{ endblock }}
+
+{{ block content }}
+
+<p>
+    こんにちは。<br>
+    これから、{{ C.PLAYERS_PER_GROUP }}人1組の公共財ゲームに参加していただきます。<br>
+    皆さんの資金は一人につき{{ C.ENDOWMENT }}。<br>
+    寄付金を再配分するときの係数は{{ C.MULTIPLIER }}倍です。<br>
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

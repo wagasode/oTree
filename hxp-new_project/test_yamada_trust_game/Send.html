@@ -1,0 +1,15 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}信頼ゲーム：あなたの選択ターンです。{{ endblock }}
+
+{{ block content }}
+
+<p>
+    あなたはプレイヤーAです。<br>
+    資金として{{C.ENDOWMENT}}を所持しています。<br>
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

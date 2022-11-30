@@ -1,0 +1,23 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}結果{{ endblock }}
+
+{{ block content }}
+
+{{ if player.id_in_group == 1 }}
+    <p>
+        あなたはプレイヤーBに対して{{group.sent_amount}}投資しました。<br>
+        そして、プレイヤーBはあなたへ{{group.sent_back_amount}}返還しました。<br>
+    </p>
+{{ else }}
+    <P>
+        プレイヤーAはあなたに対して{{group.sent_amount}}投資しました。<br>
+        そして、あなたはプレイヤーAへ{{group.sent_back_amount}}返還しました。<br>
+    </P>
+{{ endif }}
+
+<p>
+    その結果、あなたの利益は{{player.payoff}}となりました。
+</p>
+{{ next_button }}
+
+{{ endblock }}

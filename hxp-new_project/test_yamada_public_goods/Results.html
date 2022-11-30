@@ -1,0 +1,16 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Results{{ endblock }}
+
+{{ block content }}
+
+<p>
+    あなたのゲーム開始時の資金：{{ C.ENDOWMENT }}<br>
+    あなたの寄付額：{{ player.contribution }}<br>
+    グループ全体の寄付額：{{ group.total_contribution }}<br>
+    これにより、個々人への配分額は{{ group.individual_share }}となりました。<br>
+    あなたの利益は{{ player.payoff }}です。<br>
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

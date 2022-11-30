@@ -1,0 +1,16 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}信頼ゲーム：あなたの選択ターンです。{{ endblock }}
+
+{{ block content }}
+
+<p>
+    あなたはプレイヤーBです。<br>
+    先程、プレイヤーAからあなたへ{{group.sent_amount}}が投資されました。<br>
+    その投資金を元手に、あなたは{{tripled_amount}}を獲得しました。<br>
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}
